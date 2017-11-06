@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/schedule_icon"
+        android:icon="@drawable/schedule_icon"
+        app:showAsAction="ifRoom"
+        android:title="@string/schedule">
+    </item>
+    <item
+        android:id="@+id/message_icon"
+        android:icon="@drawable/message_icon"
+        app:actionLayout="@layout/notification_layout"
+        app:showAsAction="ifRoom"
+        android:title="@string/messages">
+    </item>
+    <item
+        android:id="@+id/change_password"
+        app:showAsAction="never"
+        android:title="@string/change_password">
+    </item>
+    <item
+        android:id="@+id/contact"
+        app:showAsAction="never"
+        android:title="@string/contact">
+    </item>
+    <item
+        android:id="@+id/log_out"
+        app:showAsAction="never"
+        android:title="@string/log_out">
+    </item>
+
+</menu>

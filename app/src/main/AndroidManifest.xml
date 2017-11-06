@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="niaid.lsb.protocolconnect">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name="niaid.lsb.protocolconnect.CustomApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="niaid.lsb.protocolconnect.activities.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="niaid.lsb.protocolconnect.activities.ForgotPasswordActivity" />
+        <activity android:name="niaid.lsb.protocolconnect.activities.AllEventsActivity" />
+        <activity android:name="niaid.lsb.protocolconnect.activities.EventActivity" />
+        <activity android:name="niaid.lsb.protocolconnect.activities.LateActivity" />
+        <activity android:name="niaid.lsb.protocolconnect.activities.NotComingActivity" />
+        <activity android:name="niaid.lsb.protocolconnect.activities.BaseActivity" />
+        <activity android:name="niaid.lsb.protocolconnect.activities.ResetPasswordActivity" />
+        <activity android:name="niaid.lsb.protocolconnect.activities.ContactsActivity" />
+        <activity android:name="niaid.lsb.protocolconnect.activities.MessagesActivity" />
+        <receiver android:name="niaid.lsb.protocolconnect.classes.NotificationPublisher" />
+    </application>
+
+</manifest>

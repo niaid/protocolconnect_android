@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:clickable="true"
+    android:onClick="message_onClick" >
+
+    <ImageView
+        android:id="@+id/message_icon"
+        android:src="@drawable/message_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_margin="0dp"
+        android:contentDescription="@string/message_icon" />
+
+    <ImageView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/new_message_notification"
+        android:src="@drawable/circle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="15dp"
+        android:minHeight="15dp"
+        android:layout_alignRight="@id/message_icon"
+        android:layout_alignEnd="@id/message_icon"
+        android:layout_alignTop="@id/message_icon"
+        android:layout_marginRight="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginTop="10dp"
+        android:contentDescription="@string/new_message_notification"
+        android:gravity="center"
+        android:paddingBottom="1dp"
+        android:paddingLeft="1dp"
+        android:paddingStart="1dp"
+        android:paddingRight="0dp"
+        android:paddingEnd="0dp"
+        android:visibility="invisible"/>
+</RelativeLayout>
