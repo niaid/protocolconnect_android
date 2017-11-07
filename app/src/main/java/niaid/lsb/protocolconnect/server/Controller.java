@@ -19,7 +19,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 public final class Controller {
 
     // Replace BASE_URL with your own server info (see README for more info)
-    public static final String BASE_URL = "https://np-p.net/api/v1/";
+    public static final String BASE_URL = "XXX";
     public ServerInterface serverInterface;
 
     public Controller() {
