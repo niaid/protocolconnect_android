@@ -4,12 +4,12 @@ Protocol Connect is a smartphone app and web-based portal designed to enable mor
 ## IMPORTANT
 The code in this repository will not compile a fully-functioning app as-is. We have removed the lines of code that are specific to our own server. To modify this code for your own needs, you must set up your own server first (please see the section [Steps to modify](https://github.com/niaid/protocolconnect_android#steps-to-modify)).
 
-For testing purposes only, please download protocolconnect_android_1.0.0.apk.
-
 ## App prototype
-The APK file is meant to be used for testing purposes only. This version of the app is configured to our own server, so any communication will be through our server.
+If you would like to get a feel for the app before setting up your own server, please contact Dr. John Tsang at john.tsang@nih.gov for a sample username and password.
 
-Download "protocolconnect_android_1.0.0.apk" onto your Android device and the Android system will automatically start installing it. Please configure your Settings to allow the installation of apps from unknown sources.
+Download "protocolconnect_android_1.0.0.apk" onto your Android device and the Android system will automatically start installing it. Please configure your Settings to allow the installation of apps from unknown sources. Then, log-in using the sample username and password.
+
+The APK file provided here is meant to be used for testing purposes ONLY. This version of the app is configured to our own server, so any communication will be through our server.
 
 ## Features
 * After logging in, the app displays your schedule on the home page. The current day (or next closest day) will be expanded.
