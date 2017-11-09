@@ -2,7 +2,7 @@
 Protocol Connect is a smartphone app and web-based portal designed to enable more efficient communication between clinical staff and study subjects about scheduling. Research subjects can communicate any schedule changes in real-time and via one mechanism to research staff, saving both research staff and subjects’ time and increasing the likelihood of study protocol compliance.
 
 ## IMPORTANT
-The code in this repository will not compile a fully-functioning app as-is. We have removed the lines of code that are specific to our own server. To modify this code for your own needs, you must set up your own server first (please see the section [Steps to modify](https://github.com/niaid/protocolconnect_android#steps-to-modify)).
+The code in this repository will not compile a fully-functioning app as-is. We have removed the lines of code that are specific to our own server. To modify this code for your own needs, you must set up your own server first (please see the section [Configuration](https://github.com/niaid/protocolconnect_android#configuration)).
 
 ## App prototype
 If you would like to get a feel for the app before setting up your own server, please contact Dr. John Tsang at john.tsang@nih.gov for a sample username and password.
@@ -12,16 +12,16 @@ Download "protocolconnect_android_1.0.0.apk" onto your Android device and the An
 The APK file provided here is meant to be used for testing purposes ONLY. This version of the app is configured to our own server, so any communication will be through our server.
 
 ## Features
-* After logging in, the app displays your schedule on the home page. The current day (or next closest day) will be expanded.
-* Click on each event to display the time, location, and details for that event.
-* Some events on the schedule server as reminders only and do not require RSVP (for example, "REMINDER: do not eat or drink for 12 hours before your appointment").
-* For events that take a response, you can indicate if you will attend, be late, or can't attend.
-* If you indicate you will be late, specify a time and reason. If you can't attend, specify a reason.
-* Your phone will send you a reminder 1 hour before each event (this is done through Alarm Manager).
-* You can send or receive messages by clicking on the chat bubble in the toolbar.
-* You can also see contact information for research staff or change your password. 
+* After logging in, the app displays the study subject's schedule on the home page. The current day (or next closest day) will be expanded.
+* Subjects can click on each event to display the time, location, and details for that event.
+* Some events on the schedule serve as reminders only and do not require RSVP (for example, "REMINDER: do not eat or drink for 12 hours before your appointment").
+* For events that take a response, subjects can indicate if they will attend, be late, or can't attend.
+* If subjects indicate they will be late, they can specify a time and reason. If they can't attend, they can specify a reason.
+* The subject's phone will send a reminder 1 hour before each event (this is done through Alarm Manager).
+* Subjects can send or receive messages by clicking on the chat bubble in the toolbar.
+* Subjects can also see contact information for research staff or change their password. 
 
-## Steps to modify
+## Configuration
 1. Set up your own server (see other Github repository).
 2. Open the file [Controller.java](https://github.com/niaid/protocolconnect_android/blob/master/app/src/main/java/niaid/lsb/protocolconnect/server/Controller.java).
 3. Change the BASE_URL to your own server url (line 22).
