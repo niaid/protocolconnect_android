@@ -5,7 +5,7 @@ Protocol Connect is a smartphone app and web-based portal designed to enable mor
 The code in this repository will not compile a fully-functioning app as-is. We have removed the lines of code that are specific to our own server. To modify this code for your own needs, you must set up your own server first (please see the section [Configuration](https://github.com/niaid/protocolconnect_android#configuration)).
 
 ## App prototype
-If you would like to get a feel for the app before setting up your own server, please contact Dr. John Tsang at john.tsang@nih.gov for a sample username and password.
+If you would like to get a feel for the app before setting up your own server, please contact [@cliu72](https://github.com/cliu72) (candace.liu94@gmail.com) for a sample username and password.
 
 Download "protocolconnect_android_1.0.0.apk" onto your Android device and the Android system will automatically start installing it. Please configure your Settings to allow the installation of apps from unknown sources. Then, log-in using the sample username and password.
 
