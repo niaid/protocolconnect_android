@@ -121,12 +121,14 @@ public class MainActivity extends BaseActivity {
                     Subject subject = response.body();
                     if (subject.getStatus().equals("success")) {
                         String correctPassword = subject.getData().get(0).getPassword();
+                        String study_id = subject.getData().get(0).getStudy_id();
                         if (password.equals(correctPassword)) {
 
                             // Save the username and password in Shared Preferences
                             SharedPreferences prefs = getSharedPreferences("MyPreferences", Context.MODE_PRIVATE);
                             prefs.edit().putString("email", email).apply();
                             prefs.edit().putString("password", password).apply();
+                            prefs.edit().putString("study_id", study_id).apply();
 
                             // When a user logs in for the first time, set number of read messages to 0.
                             prefs.edit().putLong("numberReadMessages", 0).apply();
