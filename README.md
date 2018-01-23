@@ -22,10 +22,10 @@ The APK file provided here is meant to be used for testing purposes ONLY. This v
 * Subjects can also see contact information for research staff or change their password. 
 
 ## Configuration
-1. Set up your own server (see other Github repository).
+1. Set up your own server (see https://github.com/luy5/ProtocolConnect-Server).
 2. Open the file [Controller.java](https://github.com/niaid/protocolconnect_android/blob/master/app/src/main/java/niaid/lsb/protocolconnect/server/Controller.java).
 3. Change the BASE_URL to your own server url (line 22).
-4. Change the authentication token for your server (line 32).
+4. Change the authentication token for your server (line 33).
 5. If your server uses a different API, you will need to change all the Response.java files in the [classes folder](https://github.com/niaid/protocolconnect_android/tree/master/app/src/main/java/niaid/lsb/protocolconnect/classes).
 
 ## General code architecture
