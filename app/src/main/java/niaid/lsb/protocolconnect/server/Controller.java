@@ -20,6 +20,7 @@ public final class Controller {
 
     // Replace BASE_URL with your own server info (see README for more info)
     public static final String BASE_URL = "XXX";
+
     public ServerInterface serverInterface;
 
     public Controller() {
@@ -30,6 +31,7 @@ public final class Controller {
             public okhttp3.Response intercept(Chain chain) throws IOException {
                 // Replace credentials with your own server info (see README for more info)
                 String authToken = Credentials.basic("XXX", "XXX");
+
                 Request newRequest = chain.request().newBuilder().addHeader("Authorization", authToken).build();
                 return chain.proceed(newRequest);
             }

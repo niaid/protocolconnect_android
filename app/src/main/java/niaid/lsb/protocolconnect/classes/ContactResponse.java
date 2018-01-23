@@ -27,6 +27,7 @@ public class ContactResponse {
         private String phone;
         private String email;
         private String email2;
+        private String study_id;
 
         public String get_id() {
             return this._id;
@@ -52,7 +53,9 @@ public class ContactResponse {
             return this.email2;
         }
 
-
+        public String getStudyId() {
+            return this.study_id;
+        }
     }
 
     /** Convert the server response to Contact objects. */

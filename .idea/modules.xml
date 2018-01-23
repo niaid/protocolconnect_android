@@ -3,7 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/lsb_protocolconnect_android.iml" filepath="$PROJECT_DIR$/lsb_protocolconnect_android.iml" />
+      <module fileurl="file://C:\Users\liucc\AndroidStudioProjects\ProtocolConnect\Github\protocolconnect_android\app\app.iml" filepath="C:\Users\liucc\AndroidStudioProjects\ProtocolConnect\Github\protocolconnect_android\app\app.iml" />
+      <module fileurl="file://C:\Users\liucc\AndroidStudioProjects\ProtocolConnect\Github\protocolconnect_android\lsb_protocolconnect_android.iml" filepath="C:\Users\liucc\AndroidStudioProjects\ProtocolConnect\Github\protocolconnect_android\lsb_protocolconnect_android.iml" />
+      <module fileurl="file://$PROJECT_DIR$/protocolconnect_android.iml" filepath="$PROJECT_DIR$/protocolconnect_android.iml" />
     </modules>
   </component>
 </project>

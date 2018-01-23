@@ -24,6 +24,7 @@ public class Subject {
 
     public class Data {
         private String email;
+        private String study_id;
         private String studyflow_id;
         private String password;
 
@@ -33,6 +34,14 @@ public class Subject {
 
         public void setEmail(String email) {
             this.email = email;
+        }
+
+        public String getStudy_id() {
+            return this.study_id;
+        }
+
+        public void setStudy_id(String id) {
+            this.study_id = id;
         }
 
         public String getStudyflow_id() {

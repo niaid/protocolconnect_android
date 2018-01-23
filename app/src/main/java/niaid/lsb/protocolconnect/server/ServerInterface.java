@@ -53,7 +53,7 @@ public interface ServerInterface {
     Call<PostResponse> postMessage(@Path("email") String email, @Body HashMap<String, Object> body);
 
     /** Gets emergency contacts */
-    @GET("contact")
-    Call<ContactResponse> getContacts();
+    @GET("contact/{study_id}")
+    Call<ContactResponse> getContacts(@Path("study_id") String study_id);
 
 }

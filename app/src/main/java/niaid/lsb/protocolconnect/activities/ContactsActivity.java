@@ -1,6 +1,7 @@
 package niaid.lsb.protocolconnect.activities;
 
 import android.content.Context;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.util.Log;
 import android.widget.ListView;
@@ -41,8 +42,12 @@ public class ContactsActivity extends BaseActivity {
         super.onResume();  // Always call the superclass method first
         super.checkForMessages();
 
+        // Get Study ID from shared preferences
+        SharedPreferences prefs = getSharedPreferences("MyPreferences", Context.MODE_PRIVATE);
+        String study_id = prefs.getString("study_id", "");
+
         // Get contact information from API
-        Call<ContactResponse> call = appState.controller.serverInterface.getContacts();
+        Call<ContactResponse> call = appState.controller.serverInterface.getContacts(study_id);
         call.enqueue(new Callback<ContactResponse>() {
             Context context = getApplicationContext();
             CharSequence text;
