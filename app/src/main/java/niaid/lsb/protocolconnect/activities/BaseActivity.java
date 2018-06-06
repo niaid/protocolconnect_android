@@ -112,7 +112,9 @@ public class BaseActivity extends AppCompatActivity {
 
             case R.id.log_out:
                 // Remove login credentials from shared preferences
-                getApplicationContext().getSharedPreferences("MyPreferences", Context.MODE_PRIVATE).edit().clear().apply();
+                getApplicationContext().getSharedPreferences("MyPreferences", Context.MODE_PRIVATE).edit().remove("email").apply();
+                getApplicationContext().getSharedPreferences("MyPreferences", Context.MODE_PRIVATE).edit().remove("password").apply();
+                getApplicationContext().getSharedPreferences("MyPreferences", Context.MODE_PRIVATE).edit().remove("study_id").apply();
 
                 // Goes to log in page and clears all other activities
                 intent = new Intent(getApplicationContext(), MainActivity.class);
@@ -176,7 +178,7 @@ public class BaseActivity extends AppCompatActivity {
                                             // If there are unread messages, add red circle to message icon in menu
                                             if (totalMessages > numberOfMessagesRead) {
 
-                                                System.out.println("NEW");
+                                                //System.out.println("NEW");
                                                 newMessageNotification();
                                             }
 

@@ -40,4 +40,5 @@
     <string name="new_user">New User</string>
     <string name="message_icon">Message icon</string>
     <string name="new_message_notification">New message notification</string>
+    <string name="firstsignin_password_message">Please change your password on your first sign-in.</string>
 </resources>

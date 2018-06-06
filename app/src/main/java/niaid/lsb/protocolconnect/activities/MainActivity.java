@@ -123,18 +123,22 @@ public class MainActivity extends BaseActivity {
                         String correctPassword = subject.getData().get(0).getPassword();
                         String study_id = subject.getData().get(0).getStudy_id();
                         if (password.equals(correctPassword)) {
-
                             // Save the username and password in Shared Preferences
-                            SharedPreferences prefs = getSharedPreferences("MyPreferences", Context.MODE_PRIVATE);
                             prefs.edit().putString("email", email).apply();
                             prefs.edit().putString("password", password).apply();
                             prefs.edit().putString("study_id", study_id).apply();
 
-                            // When a user logs in for the first time, set number of read messages to 0.
-                            prefs.edit().putLong("numberReadMessages", 0).apply();
+                            // Check if user has signed in before. If first sign-in, force password change
+                            if (!prefs.contains("firstSignin")) {
+                                // When a user logs in for the first time, set number of read messages to 0.
+                                prefs.edit().putLong("numberReadMessages", 0).apply();
 
-                            Intent intent = new Intent(MainActivity.this, AllEventsActivity.class);
-                            startActivity(intent);
+                                Intent intent = new Intent(MainActivity.this, FirstSigninActivity.class);
+                                startActivity(intent);
+                            } else {
+                                Intent intent = new Intent(MainActivity.this, AllEventsActivity.class);
+                                startActivity(intent);
+                            }
                         }
                     } else {
                         text = "Incorrect email or password. Try again.";

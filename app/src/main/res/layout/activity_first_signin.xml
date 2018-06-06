@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <TextView
+            android:id="@+id/firstsignin_password_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="94dp"
+            android:gravity="center_horizontal"
+            android:text="@string/firstsignin_password_message" />
+
+        <EditText
+            android:id="@+id/firstsignin_new_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/back"
+            android:ems="10"
+            android:gravity="center_horizontal"
+            android:hint="@string/new_password"
+            android:inputType="textPassword" />
+
+        <EditText
+            android:id="@+id/firstsignin_confirm_new_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/back"
+            android:ems="10"
+            android:gravity="center_horizontal"
+            android:hint="@string/confirm_new_password"
+            android:inputType="textPassword" />
+
+        <Button
+            android:id="@+id/firstsignin_pw_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:onClick="newPassword"
+            android:text="@string/set_new_password" />
+    </LinearLayout>
+
+</LinearLayout>

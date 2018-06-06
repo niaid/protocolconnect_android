@@ -73,6 +73,10 @@ public class ForgotPasswordActivity extends BaseActivity {
                             text = "Temporary password email sent.";
                             Toast toast = Toast.makeText(context, text, duration);
                             toast.show();
+
+                            // Update shared preferences to clear first sign-in flag (forcing the user to change pw on next login)
+                            getApplicationContext().getSharedPreferences("MyPreferences", Context.MODE_PRIVATE).edit().remove("firstSignin").apply();
+
                             finish();
                         } else {
                             Log.d("Error", "Error. Records not 0 or 1, ForgotPasswordActivity");
